@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B69B4FF278DB48800F757C0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69B4FE278DB48800F757C0 /* CoreDataStack.swift */; };
+		8B69B501278DBB5A00F757C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69B500278DBB5A00F757C0 /* Constants.swift */; };
+		8B69B5042790617000F757C0 /* ShoutOut.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B69B5022790617000F757C0 /* ShoutOut.xcdatamodeld */; };
+		8B69B506279066FC00F757C0 /* ShoutOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69B505279066FC00F757C0 /* ShoutOut.swift */; };
+		8B69B5082790773500F757C0 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69B5072790773500F757C0 /* Employee.swift */; };
+		8B69B50A27907A8D00F757C0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69B50927907A8D00F757C0 /* DataService.swift */; };
+		8B69B50C27907D3E00F757C0 /* SaveAccessDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69B50B27907D3E00F757C0 /* SaveAccessDelete.swift */; };
 		F2530B671D985E400029B14E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2530B661D985E400029B14E /* AppDelegate.swift */; };
 		F2530B6C1D985E400029B14E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2530B6A1D985E400029B14E /* Main.storyboard */; };
 		F2530B6E1D985E400029B14E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2530B6D1D985E400029B14E /* Assets.xcassets */; };
@@ -28,6 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B69B4FE278DB48800F757C0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		8B69B500278DBB5A00F757C0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8B69B5032790617000F757C0 /* ShoutOut.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoutOut.xcdatamodel; sourceTree = "<group>"; };
+		8B69B505279066FC00F757C0 /* ShoutOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOut.swift; sourceTree = "<group>"; };
+		8B69B5072790773500F757C0 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		8B69B50927907A8D00F757C0 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		8B69B50B27907D3E00F757C0 /* SaveAccessDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAccessDelete.swift; sourceTree = "<group>"; };
+		8B69B50D2795CB8200F757C0 /* ShoutOut 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ShoutOut 2.xcdatamodel"; sourceTree = "<group>"; };
 		F2530B631D985E400029B14E /* ShoutOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoutOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2530B661D985E400029B14E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2530B6B1D985E400029B14E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,10 +96,11 @@
 		F2530B651D985E400029B14E /* ShoutOut */ = {
 			isa = PBXGroup;
 			children = (
-				F2530B871D985E7F0029B14E /* Model */,
-				F2530B881D985E890029B14E /* Views & Assets */,
-				F2530B861D985E670029B14E /* View Controllers */,
 				F2530B661D985E400029B14E /* AppDelegate.swift */,
+				F2530B871D985E7F0029B14E /* Model */,
+				F2530B881D985E890029B14E /* View */,
+				F2530B861D985E670029B14E /* Controllers */,
+				8B69B500278DBB5A00F757C0 /* Constants.swift */,
 			);
 			path = ShoutOut;
 			sourceTree = "<group>";
@@ -93,29 +109,35 @@
 			isa = PBXGroup;
 			children = (
 				F2530B7B1D985E410029B14E /* ShoutOutTests.swift */,
+				8B69B50B27907D3E00F757C0 /* SaveAccessDelete.swift */,
 				F2530B7D1D985E410029B14E /* Info.plist */,
 			);
 			path = ShoutOutTests;
 			sourceTree = "<group>";
 		};
-		F2530B861D985E670029B14E /* View Controllers */ = {
+		F2530B861D985E670029B14E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				F2530B8A1D9861E40029B14E /* ShoutOutDraftsViewController.swift */,
 				F2530B891D9861E40029B14E /* ShoutOutDetailsViewController.swift */,
 				F2530B8B1D9861E40029B14E /* ShoutOutEditorViewController.swift */,
 			);
-			name = "View Controllers";
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		F2530B871D985E7F0029B14E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B69B5022790617000F757C0 /* ShoutOut.xcdatamodeld */,
+				8B69B505279066FC00F757C0 /* ShoutOut.swift */,
+				8B69B5072790773500F757C0 /* Employee.swift */,
+				8B69B4FE278DB48800F757C0 /* CoreDataStack.swift */,
+				8B69B50927907A8D00F757C0 /* DataService.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		F2530B881D985E890029B14E /* Views & Assets */ = {
+		F2530B881D985E890029B14E /* View */ = {
 			isa = PBXGroup;
 			children = (
 				F2530B6A1D985E400029B14E /* Main.storyboard */,
@@ -123,7 +145,7 @@
 				F2530B6F1D985E400029B14E /* LaunchScreen.storyboard */,
 				F2530B721D985E400029B14E /* Info.plist */,
 			);
-			name = "Views & Assets";
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +256,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2530B8C1D9861E40029B14E /* ShoutOutDetailsViewController.swift in Sources */,
+				8B69B5082790773500F757C0 /* Employee.swift in Sources */,
 				F2530B671D985E400029B14E /* AppDelegate.swift in Sources */,
+				8B69B4FF278DB48800F757C0 /* CoreDataStack.swift in Sources */,
+				8B69B501278DBB5A00F757C0 /* Constants.swift in Sources */,
+				8B69B506279066FC00F757C0 /* ShoutOut.swift in Sources */,
 				F2530B8E1D9861E40029B14E /* ShoutOutEditorViewController.swift in Sources */,
 				F2530B8D1D9861E40029B14E /* ShoutOutDraftsViewController.swift in Sources */,
+				8B69B5042790617000F757C0 /* ShoutOut.xcdatamodeld in Sources */,
+				8B69B50A27907A8D00F757C0 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2530B7C1D985E410029B14E /* ShoutOutTests.swift in Sources */,
+				8B69B50C27907D3E00F757C0 /* SaveAccessDelete.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +509,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8B69B5022790617000F757C0 /* ShoutOut.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8B69B50D2795CB8200F757C0 /* ShoutOut 2.xcdatamodel */,
+				8B69B5032790617000F757C0 /* ShoutOut.xcdatamodel */,
+			);
+			currentVersion = 8B69B50D2795CB8200F757C0 /* ShoutOut 2.xcdatamodel */;
+			path = ShoutOut.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F2530B5B1D985E400029B14E /* Project object */;
 }
